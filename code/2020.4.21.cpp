@@ -1,12 +1,12 @@
-//µÚÒ»Ìâ
+//ç¬¬ä¸€é¢˜ã€è¾“å…¥ä¸€ä¸ªæ•´æ•°ï¼Œè¾“å‡ºæ‰€æœ‰å°äºå®ƒçš„ç´ æ•°
 #if 0
 #include<iostream>
 using namespace std;
 int main() {
 	int n;
-	cout << "ÇëÊäÈëÒ»¸öÕıÕûÊı£º";
+	cout << "è¯·è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°ï¼š";
 	cin >> n;
-	cout << "\n" << "Ğ¡ÓÚ" << n << "µÄÖÊÊıÓĞ£º\n";
+	cout << "\n" << "å°äº" << n << "çš„è´¨æ•°æœ‰ï¼š\n";
 	int i, j, flag;
 	for (i = 2; i < n; i++) {
 		flag = 1;
@@ -18,7 +18,7 @@ int main() {
 }
 #endif
 
-//µÚ¶şÌâ
+//ç¬¬äºŒé¢˜ã€æ‰“å°ä¸€ä¸ªå›¾æ¡ˆ
 #if 0
 #include<iostream>
 using namespace std;
@@ -34,28 +34,28 @@ int main() {
 }
 #endif
 
-//µÚÈıÌâ
+//ç¬¬ä¸‰é¢˜ã€è§£ä¸€å…ƒäºŒæ¬¡æ–¹ç¨‹
 #if 0
 #include<iostream>
 #include<cmath>
 using namespace std;
 int main() {
 	double a,b,c,x1,x2,delta;
-	cout << "ÇëÊäÈëAx^2+Bx+C=0µÄ3ÏîÏµÊı£º\n";
+	cout << "è¯·è¾“å…¥Ax^2+Bx+C=0çš„3é¡¹ç³»æ•°ï¼š\n";
 	cin >> a >> b >> c;
 	delta = b * b - 4 * a * c;
 	if (delta > 0) {
 		x1 = (-b + sqrt(delta)) / (2 * a);
 		x2 = (-b - sqrt(delta)) / (2 * a);
-		cout << "\n¸Ã·½³ÌÓĞ2¸ö½â£¬·Ö±ğÎª"<<"x1="<<x1<<"ºÍ"<<"x2="<<x2;
+		cout << "\nè¯¥æ–¹ç¨‹æœ‰2ä¸ªè§£ï¼Œåˆ†åˆ«ä¸º"<<"x1="<<x1<<"å’Œ"<<"x2="<<x2;
 	}
 	if (delta == 0) { 
 		x1 = (-b) / (2 * a); 
 		x2 = x1;
-		cout << "¸Ã·½³ÌÓĞÎ¨Ò»½â£º"<<"x1=x2="<<x1;
+		cout << "è¯¥æ–¹ç¨‹æœ‰å”¯ä¸€è§£ï¼š"<<"x1=x2="<<x1;
 	}
 	if (delta < 0) {
-		cout << "¸Ã·½³ÌÎŞ½â¡£";
+		cout << "è¯¥æ–¹ç¨‹æ— è§£ã€‚";
 	}
 	
 }
