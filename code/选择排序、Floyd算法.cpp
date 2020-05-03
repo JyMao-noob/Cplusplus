@@ -1,9 +1,9 @@
-//1.Ñ¡ÔñÅÅĞò
+//1.é€‰æ‹©æ’åº
 #if 0
 #include<iostream>
 #define len 10
 int main() {
-	int a[len] = {62,45,91,14,26,38,71,61,55,41};    //ÒÔ10¸öÊı×ÖÅÅĞòÎªÀı
+	int a[len] = {62,45,91,14,26,38,71,61,55,41};    //ä»¥10ä¸ªæ•°å­—æ’åºä¸ºä¾‹
 	int times = 0,temp;
 	int i = 0, j = 0;
 	for (i; i < len - 1; i++) {
@@ -16,14 +16,14 @@ int main() {
 			}
 		}
 	}
-	std::cout << "Ò»¹²±È½ÏºÍÒÆ¶¯ÁËÊı¾İ" << times << "´Î¡£\n" << "´ÓĞ¡µ½´óµÄË³ĞòÎª£º\n";
+	std::cout << "ä¸€å…±æ¯”è¾ƒå’Œç§»åŠ¨äº†æ•°æ®" << times << "æ¬¡ã€‚\n" << "ä»å°åˆ°å¤§çš„é¡ºåºä¸ºï¼š\n";
 	for (i = 0; i < len; i++)
 		std::cout << a[i] << "\t";
 
 }
 #endif
 
-//2.FloydËã·¨
+//2.Floydç®—æ³•
 #if 0
 #include<iostream>
 using namespace std;
@@ -31,7 +31,7 @@ int main() {
 	int n = 4;
 	int max = 10000;
 	double D[][4] = { {0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0} };
-	cout << "ÇëÊäÈë¾ØÕóÍ¼£º(²»¿ÉÍ¨ĞĞÇëÊäÎª10000)\n";
+	cout << "è¯·è¾“å…¥çŸ©é˜µå›¾ï¼š(ä¸å¯é€šè¡Œè¯·è¾“ä¸º10000)\n";
 	for(auto u=0;u<n;u++)
 		for (auto v = 0; v < n; v++) {
 			cin >> D[u][v];
@@ -40,7 +40,7 @@ int main() {
 	for (auto u = 0; u < n; u++)
 		for (auto v = 0; v < n; v++)
 			P[u][v] = u;
-	cout << "³õÊ¼µÄDºÍP¾ØÕó£º\n";
+	cout << "åˆå§‹çš„Då’ŒPçŸ©é˜µï¼š\n";
 	for (auto& row : D) {
 		for (auto col : row)
 			cout << col << "\t";
@@ -62,7 +62,7 @@ int main() {
 					P[u][v] = P[w][v];
 				}
 
-	cout << "×îÖÕµÄDºÍP¾ØÕó£º\n";
+	cout << "æœ€ç»ˆçš„Då’ŒPçŸ©é˜µï¼š\n";
 	for (auto& row : D) {
 		for (auto col : row)
 			cout << col << "\t";
@@ -76,11 +76,11 @@ int main() {
 	}
 	cout << std::endl;
 
-	cout << "ÊäÈëÒª²éÑ¯µÄ2¸öµã£¨A->B£©£º\n";
+	cout << "è¾“å…¥è¦æŸ¥è¯¢çš„2ä¸ªç‚¹ï¼ˆA->Bï¼‰ï¼š\n";
 	int u, v;
 	cin >> u >> v;
 
-			cout << u << "µ½" << v << "µÄ×î¶ÌÄæÏòÂ·¾¶Îª£º";
+			cout << u << "åˆ°" << v << "çš„æœ€çŸ­é€†å‘è·¯å¾„ä¸ºï¼š";
 			cout << v << ",";
 			auto w{ P[u][v] };
 			for (auto w{ P[u][v] }; w != u;) {
