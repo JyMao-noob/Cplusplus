@@ -1,12 +1,12 @@
 #if 0
-//1.ººÅµËşµÄµİ¹éÇó½â
+//1.æ±‰è¯ºå¡”çš„é€’å½’æ±‚è§£
 #include<iostream>
 using namespace std;
 void moveDisk(int i, const char x, const char y) {
 	cout << "Moving disk " << i << " from " << x << " to " << y << endl;
 }
 
-//aÎªÆğÊ¼£¬½èÖúb£¬µ½c
+//aä¸ºèµ·å§‹ï¼Œå€ŸåŠ©bï¼Œåˆ°c
 void move(int n, const char a, const char b, const char c) {
 	if (n < 1) return;
 	move(n - 1, a, c, b);
@@ -21,10 +21,10 @@ int main() {
 #endif
 
 #if 1
-//2.ÃÔ¹¬ÎÊÌâµÄµİ¹éÇó½â
+//2.è¿·å®«é—®é¢˜çš„é€’å½’æ±‚è§£
 #include<iostream>
 using namespace std;
-//´´½¨Ò»¸ö8x8µÄÃÔ¹¬£¬ÆäÖĞ1±íÊ¾²»¿ÉÍ¨ĞĞµÄÇ½±Ú£¬0±íÊ¾¿ÉÍ¨ĞĞµÄÂ·¾¶
+//åˆ›å»ºä¸€ä¸ª8x8çš„è¿·å®«ï¼Œå…¶ä¸­1è¡¨ç¤ºä¸å¯é€šè¡Œçš„å¢™å£ï¼Œ0è¡¨ç¤ºå¯é€šè¡Œçš„è·¯å¾„
 int maze[8][8] = {
 {1,1,1,1,1,1,1,1},
 {1,0,0,0,0,0,1,1},
@@ -38,9 +38,9 @@ int maze[8][8] = {
 void print() {
 	for (int i = 0; i < 8; i++) {
 		for (int j = 0; j < 8; j++) {
-			if (maze[i][j] == 1)  cout << "*";           //*±íÊ¾Ç½±Ú
-			else if (maze[i][j] == -1) cout << "o";      //o±íÊ¾×ßÃÔ¹¬µÄ¹ì¼£
-			else cout << " ";                            //¿ÉÍ¨ĞĞµÄÓÃ¿Õ¸ñ±íÊ¾
+			if (maze[i][j] == 1)  cout << "*";           //*è¡¨ç¤ºå¢™å£
+			else if (maze[i][j] == -1) cout << "o";      //oè¡¨ç¤ºèµ°è¿·å®«çš„è½¨è¿¹
+			else cout << " ";                            //å¯é€šè¡Œçš„ç”¨ç©ºæ ¼è¡¨ç¤º
 		}
 		cout << endl;
 	}
@@ -48,12 +48,12 @@ void print() {
 
 void pass(int x, int y) {
 	maze[x][y] = -1;
-	if (x == 6 && y == 6) {                               //³ö¿Ú×ø±ê£¨6£¬6£©
-		cout << "ÃÔ¹¬×ß·¨£º" << endl;
+	if (x == 6 && y == 6) {                               //å‡ºå£åæ ‡ï¼ˆ6ï¼Œ6ï¼‰
+		cout << "è¿·å®«èµ°æ³•ï¼š" << endl;
 		print();
 		cout << endl;
 	};
-	//µİ¹é
+	//é€’å½’
 	if (maze[x][y + 1] == 0) pass(x, y + 1);
 	if (maze[x + 1][y] == 0) pass(x + 1, y);
 	if (maze[x - 1][y] == 0) pass(x - 1, y);
@@ -62,8 +62,8 @@ void pass(int x, int y) {
 
 }
 int main() {
-	int a = 1, b = 1;                           //Èë¿Ú×ø±ê£¨1£¬1£©
-	cout << "µØÍ¼ĞÅÏ¢Îª£º" << endl;
+	int a = 1, b = 1;                           //å…¥å£åæ ‡ï¼ˆ1ï¼Œ1ï¼‰
+	cout << "åœ°å›¾ä¿¡æ¯ä¸ºï¼š" << endl;
 	print();
 	cout << endl;
 	pass(a, b);
