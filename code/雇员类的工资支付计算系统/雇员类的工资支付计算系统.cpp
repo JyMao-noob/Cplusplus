@@ -12,29 +12,30 @@ int main() {
 	Management m;
 	int choice;
 	while (true) {
+		
 		m.Show_Menu();
-		cout << "ÇëÊäÈë²Ù×÷Ñ¡Ôñ£º" << endl;
+		cout << "è¯·è¾“å…¥æ“ä½œé€‰æ‹©ï¼š" << endl;
 		cin >> choice;
 		switch (choice) {
-		case 0://ÍË³öÏµÍ³
+		case 0://é€€å‡ºç³»ç»Ÿ
 			m.exitsystem();
 			break;
-		case 1://Ôö¼ÓÖ°¹¤ĞÅÏ¢
+		case 1://å¢åŠ èŒå·¥ä¿¡æ¯
 			m.add_Emp();
 			break;
-		case 2://ÏÔÊ¾ËùÓĞÖ°¹¤ĞÅÏ¢
+		case 2://æ˜¾ç¤ºæ‰€æœ‰èŒå·¥ä¿¡æ¯
 			m.Show_Emp();
 			break;
-		case 3://ÏÔÊ¾Ä³Ò»²¿ÃÅËùÓĞÖ°¹¤ĞÅÏ¢
+		case 3://æ˜¾ç¤ºæŸä¸€éƒ¨é—¨æ‰€æœ‰èŒå·¥ä¿¡æ¯
 			m.Show2_Emp();
 			break;
-		case 4://É¾³ı
+		case 4://åˆ é™¤
 			m.Del_Emp();
 			break;
-		case 5://ĞŞ¸Ä
+		case 5://ä¿®æ”¹
 			m.Mod_Emp();
 			break;
-		case 6://²éÕÒ
+		case 6://æŸ¥æ‰¾
 			m.Find_Emp();
 			break;
 		
