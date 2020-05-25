@@ -2,10 +2,10 @@
 #include<iostream>
 using namespace std;
 
-//Ñ¡ÊÖÀà
+//é€‰æ‰‹ç±»
 class Speaker
 {
 public:
 	string m_Name;
-	double m_Score[2];  //2ÂÖµÃ·Ö
+	double m_Score[2];  //2è½®çš„å¾—åˆ†
 };
