@@ -12,6 +12,7 @@ int main() {
 	Management m;
 	int choice;
 	while (true) {
+
 		
 		m.Show_Menu();
 		cout << "请输入操作选择：" << endl;
